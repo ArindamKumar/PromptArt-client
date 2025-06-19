@@ -22,7 +22,7 @@ export default function Login() {
 			{	
 				// const {data}=await axios.post(backendUrl+'/api/user/login',{email,password})
 				console.log("Logging in...");
-				const {data} = await axios.post('http://localhost:4000/api/user/login', {email, password});
+				const {data} = await axios.post(backendUrl+'/api/user/login', {email, password});
 
 				if(data.success)
 				{
