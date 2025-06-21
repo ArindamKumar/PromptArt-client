@@ -37,7 +37,7 @@ export default function Navbar()
 			<div>
 				{user ?
 					<div className='flex items-center gap-2 sm:gap-3'>
-						<a href='https://merchant.razorpay.com/policy/QgoNdqOm2fuFll/terms' className='cursor-pointer text-gray-600 max-sm:hidden pl-4'>
+						{/*<a href='https://merchant.razorpay.com/policy/QgoNdqOm2fuFll/terms' className='cursor-pointer text-gray-600 max-sm:hidden pl-4'>
 							Terms
 						</a>
 						<a href='https://merchant.razorpay.com/policy/QgoNdqOm2fuFll/shipping' className='cursor-pointer text-gray-600 max-sm:hidden pl-4'>
@@ -51,7 +51,7 @@ export default function Navbar()
 						</a>
 						<a href='https://merchant.razorpay.com/policy/QgoNdqOm2fuFll/contact_us' className='cursor-pointer text-gray-600 max-sm:hidden pl-4'>
 							Contact Us
-						</a>
+						</a>*/}
 						<button onClick={()=>navigate('/buy')} className='flex items-center gap-2 bg-blue-100 px-4 sm:px-6 py-1.5 sm:py-3 rounded-full hover:scale-105 transition-all duration-700'>
 							<img className='w-5' src={assets.credit_star} alt="" />
 							<p className='text-xs sm:text-sm font-medium text-gray-600'>
@@ -74,7 +74,7 @@ export default function Navbar()
 					</div>
 				:
 					<div className='flex items-center gap-2 sm:gap-5'>
-						<a href='https://merchant.razorpay.com/policy/QgoNdqOm2fuFll/terms' className='cursor-pointer'>
+						{/*<a href='https://merchant.razorpay.com/policy/QgoNdqOm2fuFll/terms' className='cursor-pointer'>
 							Terms & Conditions
 						</a>
 						<a href='https://merchant.razorpay.com/policy/QgoNdqOm2fuFll/shipping' className='cursor-pointer'>
@@ -88,7 +88,7 @@ export default function Navbar()
 						</a>
 						<a href='https://merchant.razorpay.com/policy/QgoNdqOm2fuFll/contact_us' className='cursor-pointer'>
 							Contact Us
-						</a>
+						</a>*/}
 						<p onClick={()=>navigate('/buy')} className='cursor-pointer'>
 							Pricing
 						</p>

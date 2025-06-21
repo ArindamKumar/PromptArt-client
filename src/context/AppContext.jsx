@@ -18,7 +18,12 @@ const AppContextProvider=(props)=>{
 	const loadCreditsData=async()=>{
 		try
 		{
-			const {data}=await axios.post(backendUrl+'/api/user/credits',{},{headers: {token}})
+			const {data}=await axios.get(backendUrl+'/api/user/credits',{headers: {token}})
+/*	IMPORTANT !!
+if in the userRoutes.js, there was a get method using the '/credits' endpoint, then use:
+const {data}=await axios.post(backendUrl+'/api/user/credits',{},{headers: {token}})
+*/
+			
 			if(data.success)
 			{
 				setCredit(data.credits)
